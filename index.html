@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/html" href="https://converse-qa-iad.ces.pitneycloud.com/public/slick/slick.css"/>
 
-<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
 <script type="text/javascript" src="https://converse-qa-iad.ces.pitneycloud.com/public/slick/slick.min.js"></script>
@@ -34,7 +34,6 @@ border: 1px solid black;
 <script type="text/javascript">
 var newChat;
 $(function(){
-	// Add your Web Client options below. See TOPIC: 'Web Client Options' above for more information.
 	var options = {
 		host: "https://converse-qa-iad.ces.pitneycloud.com",
 		serverUserImage: "https://converse-qa-iad.ces.pitneycloud.com/pb-circle-mark.png",
@@ -51,7 +50,6 @@ $(function(){
 	newChat = new converseChat(options);
     newChat.init();
     newChat.openBot("sa9299b","4eb611ce-b3ea-44c3-a02c-38f1dd46558a", "Demo User1");
-    //sa9299b unique id for customer; id="connection" & Disconnected - trying to reconnect
     newChat.show();
     newChat.sendPostBackSilent('start');
 })
