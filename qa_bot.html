@@ -49,7 +49,7 @@ $(function(){
 	};
 	newChat = new converseChat(options);
     newChat.init();
-    newChat.openBot("sa9299b","4eb611ce-b3ea-44c3-a02c-38f1dd46558a", "Demo User1");
+    newChat.openBot("sa9299b","4eb611ce-b3ea-44c3-a02c-38f1dd46558a", {id: "xxxxxxx", first_name: "Customer", last_name: "Any", full_name: "Customer Any", locale: "en_US"});
     newChat.show();
     newChat.sendPostBackSilent('start');
 })
