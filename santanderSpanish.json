@@ -1,0 +1,14 @@
+[
+	{
+		"title": "Eres elegible para una actualización a la nueva Tarjeta Roja.",
+		"item_url": "",
+		"image_url": "https://converse.ces.pitneycloud.com/tarjeta-banco-santander.jpg",
+		"subtitle": "¿Te gustaría aprender mas?",
+		"buttons": [
+			"Sí, más información",
+			"Recuérdame más tarde",
+			"No, gracias"
+		]
+	}
+
+]
