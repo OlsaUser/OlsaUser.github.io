@@ -1,26 +1,26 @@
-[                                                                                                                                                                                                        
-{                                                                                                                                                                                                        
-title: "You are eligible for an upgrade to the iPhone 7.",                                                                                                                                                                                                        
-item_url: "http://zipzapme.com/special-offers",                                                                                                                                                                                                        
-image_url: "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",                                                                                                                                                                                                        
-subtitle: "Would you like to hear more?",                                                                                                                                                                                                        
-buttons: [                                                                                                                                                                                                        
-Yes, Learn More,                                                                                                                                                                                                        
-Remind Me Later,                                                                                                                                                                                                        
-No Thanks                                                                                                                                                                                                        
-]                                                                                                                                                                                                        
-},                                                                                                                                                                                                        
-{                                                                                                                                                                                                        
-title: "You are also eligible for a better data plan",                                                                                                                                                                                                        
-item_url: "http://zipzapme.com/special-offers",                                                                                                                                                                                                        
-image_url: "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",                                                                                                                                                                                                        
-subtitle: "Would you like to hear more?",                                                                                                                                                                                                        
-buttons: [                                                                                                                                                                                                        
-{                                                                                                                                                                                                        
-type: "web_url",                                                                                                                                                                                                        
-title: "Yes, Learn More",                                                                                                                                                                                                        
-url: "http://zipzapme.com/special-offers"                                                                                                                                                                                                        
-}                                                                                                                                                                                                        
-]                                                                                                                                                                                                        
-}                                                                                                                                                                                                        
+[{
+"title":"title",
+"item_url":"",
+"image_url":"/pb-circle-mark.png",
+"subtitle":"PLAY : Roaming 2G/3G/LTE on Orange and Plus networks and 2G/3G on T-Mobile network. Limited to 3 Mbit/s download, 1 Mbit/s upload",
+"buttons": [
+{
+"type":"web_url",
+"title":"Get Active",
+"url":"https://www.play.pl/"
+}
 ]
+},
+{
+"title":"title",
+"item_url":"",
+"image_url":"/pb-circle-mark.png",
+"subtitle":"PLAY : Roaming 2G/3G/LTE on Orange and Plus networks and 2G/3G on T-Mobile network. Limited to 3 Mbit/s download, 1 Mbit/s upload",
+"buttons": [
+{
+"type":"web_url",
+"title":"Get Active",
+"url":"https://www.play.pl/"
+}
+]
+}]
