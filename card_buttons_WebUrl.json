@@ -7,7 +7,6 @@
         "buttons": [
             {
                 "title": "web title",
-                "payload": "payload",
                 "type": "web_url",
                 "url": "http://www.pb.com"
             }
