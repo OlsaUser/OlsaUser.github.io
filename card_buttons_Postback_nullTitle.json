@@ -7,7 +7,6 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "",
                 "payload": "payload"
             }
         ]
