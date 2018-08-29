@@ -5,9 +5,11 @@
         "image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
         "subtitle": "Would you like to hear more?",
         "buttons": [
-            "Yes, Learn More",
-            "Remind Me Later",
-            "No Thanks"
+{
+                "type": "web_url",
+                "title": "Yes, Learn More",
+                "url": "http://zipzapme.com/special-offers"
+            }
         ]
     },
     {
@@ -16,9 +18,11 @@
         "image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
         "subtitle": "Would you like to hear more?",
         "buttons": [
-            "Yes, Learn More",
-            "Remind Me Later",
-            "No Thanks"
+{
+                "type": "web_url",
+                "title": "Yes, Learn More",
+                "url": "http://zipzapme.com/special-offers"
+            }
         ]
     }
 ]
