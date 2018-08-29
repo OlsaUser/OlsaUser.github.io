@@ -8,7 +8,8 @@
             {
                 "type": "postback",
                 "title": "postback title",
-                "payload": "payload"
+                "payload": "payload",
+                "next": null
             }
         ]
     }
