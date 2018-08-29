@@ -1,14 +1,16 @@
 [
     {
-        "title": "",
-        "item_url": "",
-        "image_url": "",
-        "subtitle": "",
+        "title": "title",
+        "item_url": "item_url",
+        "image_url": "image_url",
+        "subtitle": "subtitle",
         "buttons": [
             {
-                "type": "",
-                "title": "",
-                "payload": ""
+                
+                "title": "postback title",
+                "payload": null,
+                "next": null,
+                "type": "postback"
             }
         ]
     }
