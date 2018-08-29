@@ -1,0 +1,26 @@
+[
+    {
+        "title": "title",
+        "item_url": "item_url",
+        "image_url": "image_url",
+        "subtitle": "subtitle",
+        "buttons": [
+            "Yes, Learn More",
+            "Remind Me Later",
+            "No Thanks"
+        ]
+    },
+    {
+        "title": "You are also eligible for a better data plan",
+        "item_url": "http://zipzapme.com/special-offers",
+        "image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
+        "subtitle": "Would you like to hear more?",
+        "buttons": [
+            {
+                "type": "web_url",
+                "title": "title",
+                "url": "url"
+            }
+        ]
+    }
+]
