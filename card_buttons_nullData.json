@@ -9,5 +9,18 @@
             "",
             ""
         ]
+    },
+    {
+        "title": "",
+        "item_url": "",
+        "image_url": "",
+        "subtitle": "",
+        "buttons": [
+            {
+                "type": "",
+                "title": "",
+                "url": ""
+            }
+        ]
     }
 ]
