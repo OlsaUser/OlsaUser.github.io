@@ -8,7 +8,7 @@
             {
                 "type": "account_link",
                 "title": "account title",
-                "url": "http://www.pb.com",
+                "url": "http://www.pb.com"
             }
         ]
     }
