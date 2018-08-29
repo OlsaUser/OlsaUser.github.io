@@ -1,16 +1,8 @@
 [
-    {
-        "title": "title",
-        "item_url": "https://zakupywm1.pl/uploads/shops/banner_224.jpg",
-        "image_url": "https://zakupywm1.pl/uploads/shops/banner_224.jpg",
-        "subtitle": "subtitle",
-        "buttons": [
             {
                 "title": "phone title",
-                "payload": "380988272727",
-                "type": "phone_number",
+                "payload": "+380988272727",
+                "type": "phone",
 
             }
         ]
-    }
-]
