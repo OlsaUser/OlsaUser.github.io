@@ -9,7 +9,7 @@
                 "type": "postback",
                 "title": "postback title",
                 "payload": "payload",
-                "next": null
+                "next": ""
             }
         ]
     }
