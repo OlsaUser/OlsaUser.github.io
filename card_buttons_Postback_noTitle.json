@@ -1,0 +1,14 @@
+[
+    {
+        "item_url": "item_url",
+        "image_url": "image_url",
+        "subtitle": "subtitle",
+        "buttons": [
+            {
+                "type": "postback",
+                "title": "postback title",
+                "payload": "payload"
+            }
+        ]
+    }
+]
