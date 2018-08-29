@@ -1,0 +1,13 @@
+[
+    {
+        "title": "title",
+        "item_url": "item_url",
+        "image_url": "image_url",
+        "subtitle": "subtitle",
+        "buttons": [
+            "Yes, Learn More",
+            "Remind Me Later",
+            "No Thanks"
+        ]
+    }
+]
