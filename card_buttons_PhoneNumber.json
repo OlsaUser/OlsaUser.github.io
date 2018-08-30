@@ -6,7 +6,7 @@
         "subtitle": "subtitle",
         "buttons": [
             {
-                "type": "phone_number",
+                "type": "phone",
                 "title": "phone title",
                 "payload": "+380988272727"
             }
