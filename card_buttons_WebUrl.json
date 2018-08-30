@@ -6,8 +6,8 @@
         "subtitle": "subtitle",
         "buttons": [
             {
-                "title": "web title",
                 "type": "web_url",
+                "title": "web title",
                 "url": "http://www.pb.com"
             }
         ]
