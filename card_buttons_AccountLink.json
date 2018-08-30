@@ -7,7 +7,6 @@
         "buttons": [
             {
                 "type": "account_link",
-               // "title": "title 1",
                 "url": "https://campus.abaenglish.com"
             }
         ]
