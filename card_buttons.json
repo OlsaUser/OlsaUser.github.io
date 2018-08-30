@@ -19,7 +19,6 @@
             {
                 "type": "web_url",
                 "title": "Yes, Learn More",
-                "payload": "payload",
                 "url": "http://zipzapme.com/special-offers"
             }
         ]
