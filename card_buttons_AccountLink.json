@@ -7,7 +7,6 @@
         "buttons": [
             {
                 "type": "account_link",
-                "title": "account title",
                 "url": "https://www.pb.com"
             }
         ]
