@@ -1,0 +1,14 @@
+[
+    {
+        "title": "You are also eligible for a better data plan",
+        "item_url": "http://zipzapme.com/special-offers",
+        "image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
+        "subtitle": "Would you like to hear more?",
+        "buttons": [
+         {
+          "content_type":"text",
+          "title":"required, string",
+          "image_url":"https://zakupywm1.pl/uploads/shops/banner_224.jpg", 
+          "payload":"message to send to the bot"
+          }
+]
