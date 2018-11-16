@@ -1,16 +1,5 @@
 [
-    {
-        "title": "You are eligible for an upgrade to the iPhone 7.",
-        "item_url": "http://zipzapme.com/special-offers",
-        "image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
-        "subtitle": "Would you like to hear more?",
-        "buttons": [
-            "Yes Learn More",
-            "Remind Me Later",
-            "No Thanks"
-        ]
-    },
-    {
+     {
         "title": "You are also eligible for a better data plan",
         "item_url": "http://zipzapme.com/special-offers",
         "image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
@@ -23,8 +12,8 @@
             }
         ]
     },
-            {
-        "title": "You are also eligible for a better data plan",
+    {
+        "title": "You are eligible for an upgrade to the iPhone 7.",
         "item_url": "http://zipzapme.com/special-offers",
         "image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
         "subtitle": "Would you like to hear more?",
