@@ -20,7 +20,9 @@
                 "type": "web_url",
                 "title": "Yes, Learn More",
                 "url": "http://zipzapme.com/special-offers"
-            },
+            }
+        ]
+    },
             {
         "title": "You are also eligible for a better data plan",
         "item_url": "http://zipzapme.com/special-offers",
