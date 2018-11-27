@@ -33,7 +33,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3/converse-chat.js"></script>
   -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://designer-converse-qa-iad.ces.pitneycloud.com/public/slick/slick.css"/>
     <link rel="stylesheet" href="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3/converse-chat.css">
     <link rel="shortcut icon" href="images/pb_favicon.ico" type="image/x-icon" />
@@ -42,13 +43,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
     <script type="text/javascript" src="https://designer-converse-qa-iad.ces.pitneycloud.com/public/slick/slick.min.js"></script>
- 
+ -->
+	
+<link rel="stylesheet" href="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3/converse-chat.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3/converse-chat.js"></script>
+	
 </head>
 <body>
 
 <div id="chat-wrapper" class="chat-wrapper">
-<!--<div id="chatcontainer" class="chat-container"></div>-->
-<div id="chatbot" class="chat-container"></div>
+<div id="chatcontainer" class="chat-container"></div>
 </div>
 
 </body>
@@ -59,8 +71,7 @@ $(function(){
 	var options = {
 		host: "https://converse-qa-iad.ces.pitneycloud.com",
 		serverUserImage: "https://converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
-		//container: "#chatcontainer",
-		container: "#chatbot",
+		container: "#chatcontainer",
 		showCloseButton: true,
 		//reConnectDelay: 10000,
 		//sendCallback: sTrap,
