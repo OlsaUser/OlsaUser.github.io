@@ -64,12 +64,14 @@ $(function(){
 		//sendCallback: sTrap,
 		//receiveCallback: rTrap,
 		//hideCallback: hTrap,
+		//hideIcon: "glyphicon-remove",
 		title: "Online Chat",
 		placeholder: "Type a message...", 
 		sendButtonTitle: "Send",
 		showToolbar: true,
-		hideIcon: "fa-times"
-		//hideIcon: "glyphicon-remove"
+		hideIcon: "fa-times",
+		allowHTML: true,
+		showBrowseButton: true
 	};
     
     ConverseWebClient.init(options, function (webClient) {
