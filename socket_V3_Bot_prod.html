@@ -1,30 +1,25 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Prod_V3</title>
-
     <style type="text/css">
-        html {
-            height: 98%;
-            font-family: "Open Sans", sans-serif;
-            font-size: 14px;
-         }
-         body {
-            height: 100%;
-         }
-         .chat-container {
-            background-color: #ffffff;
-            border: 1px solid #e5e5ea;
-            display: block;
-            height: 85%;
-            width: 85%;
-            border-radius: 6px;
-            box-shadow: 0 0 20px #acacac;
-        }
+    html {
+        height: 98%;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+     }
+     body {
+        height: 100%;
+     }
+     .chat-container {
+        background-color: #ffffff;
+        border: 1px solid #e5e5ea;
+        display: block;
+        height: 85%;
+        width: 85%;
+        border-radius: 6px;
+        box-shadow: 0 0 20px #acacac;
+    }
     </style>
-
 
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
     <link rel="stylesheet" href="https://designerui.converse.pitneybowes.com/webchat/v3/converse-chat.css">
@@ -37,41 +32,27 @@
 </head>
 <script type="text/javascript">
     $(function() {
-        let params = new URLSearchParams(window.location.search);
-        let host = params.get("host");
-        let tenant = params.get("tenant");
-        let bot = params.get("bot");
-        let postback = params.get("postback") || "start";
-
         var options = {
             placeholder: "Type a message...",
-            //clientUserImage: "empty-avatar.jpg",
-            // sendButtonTitle: "&#x23ce;",
-            sendButtonTitle: "Send",
-            host: host || "https://designer.converse.pitneybowes.com",
-            serverUserImage: "https://converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
+            host: "https://designer.converse.pitneybowes.com",
+            serverUserImage: "https://designerui.converse.pitneybowes.com/public/img/pb-circle-mark.png",
             container: "#chatcontainer",
-            showCloseButton: true,
-            showSettingsButton: true,
             showToolbar: true,
             reConnectDelay: 10000,
-            title: "Chat with us",
+            title : "Chat With Us",
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
 
         ConverseWebClient.init(options, function (webClient) {
-            webClient.openBot(tenant || "sa3d20f", bot || "98233dc7-3ee4-4dd4-a4e4-878c974bede6", {
-                id: "xxxxxxx",
+            webClient.openBot("sa3d20f", "98233dc7-3ee4-4dd4-a4e4-878c974bede6", {
+                id: "TT00001",
                 first_name: "Friend",
                 last_name: "Any",
-                full_name: "Customer Any",
-                locale: "en_US"
+                full_name: "Customer Any"
             });
 
             webClient.show();
-            if (postback) {
-            	webClient.sendPostBackSilent(postback);
-            }
+            webClient.sendPostBackSilent("start");
         });
     });
 </script>
