@@ -35,7 +35,7 @@
 
 <script type="text/javascript">
     $(function() {   
-        var options = {
+        var options1 = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
             serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
@@ -46,7 +46,18 @@
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
         
-        ConverseWebClient.init(options, function(webClient) {
+       var options2 = {
+            placeholder: "Type a message...",
+            host: "https://converse-qa-iad.ces.pitneycloud.com",
+            serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
+            container: "#chatcontainer2",
+            showToolbar: true,
+            reConnectDelay: 10000,
+            title : "Chat With Import Bot",
+            hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
+        };
+        
+        ConverseWebClient.init(options1, function(webClient) {
             webClient.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
                 id: "TT00001",
                 first_name: "Friend",
@@ -57,28 +68,8 @@
             webClient.show();
             webClient.sendPostBackSilent("start");
          });
-    });
-</script>
-
-<body>
- <b>Chat #1</b> 
-<div id="chatcontainer1" class="chat-container"></div>
-
- <b>Chat #2</b> 
- <script type="text/javascript">
-    $(function f() {
-        var options = {
-            placeholder: "Type a message...",
-            host: "https://converse-qa-iad.ces.pitneycloud.com",
-            serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
-            container: "#chatcontainer2",
-            showToolbar: true,
-            reConnectDelay: 10000,
-            title : "Chat With Import Bot",
-            hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
-        };
-
-        ConverseWebClient.init(options, function(webClient2) {
+         
+        ConverseWebClient.init(options2, function(webClient2) {
             webClient2.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
                 id: "TT00001",
                 first_name: "Friend",
@@ -88,10 +79,18 @@
 
             webClient2.show();
             webClient2.sendPostBackSilent("go");
-         });
+         });  
     });
 </script>
+
+<body>
+
+<b>Chat #1</b> 
+<div id="chatcontainer1" class="chat-container"></div>
+
+<b>Chat #2</b> 
 <div id="chatcontainer2" class="chat-container"></div>
+
 </body>
 
 </html>
