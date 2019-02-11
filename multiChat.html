@@ -33,7 +33,11 @@
 
 </head>
 
-<script type="text/javascript">
+
+
+<body>
+ <b>Chat #1</b> 
+ <script type="text/javascript">
     $(function() {
         var options = {
             placeholder: "Type a message...",
@@ -46,21 +50,25 @@
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
 
-        ConverseWebClient.init(options, function (webClient) {
-            webClient.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
+        ConverseWebClient.init(options, function (webClient1) {
+            webClient1.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
                 id: "TT00001",
                 first_name: "Friend",
                 last_name: "Any",
                 full_name: "Customer Any"
             });
 
-            webClient.show();
-            webClient.sendPostBackSilent("start");
-        })
-          });
-        
-        $(function() {
-        var options2 = {
+            webClient1.show();
+            webClient1.sendPostBackSilent("start");
+         })
+    });
+</script>
+<div id="chatcontainer1" class="chat-container"></div>
+
+ <b>Chat #2</b> 
+ <script type="text/javascript">
+    $(function() {
+        var options = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
             serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
@@ -70,26 +78,20 @@
             title : "Chat With Help Bot",
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
-        
-       ConverseWebClient.init(options2, function (webClient2) {
-            webClient2.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
-                id: "xxxxxxx",
-                first_name: "v3/converse-chat",
-                last_name: "v3/converse-chat",
-                full_name: "v3/converse-chat"
+
+        ConverseWebClient.init(options, function (webClient2) {
+            webClient2.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
+                id: "TT00001",
+                first_name: "Friend",
+                last_name: "Any",
+                full_name: "Customer Any"
             });
 
             webClient2.show();
-            webClient2.sendPostBackSilent("go");
+            webClient2.sendPostBackSilent("start");
          })
     });
 </script>
-
-<body>
- <b>Chat #1</b> 
-<div id="chatcontainer1" class="chat-container"></div>
-
- <b>Chat #2</b> 
 <div id="chatcontainer2" class="chat-container"></div>
 
 </body>
