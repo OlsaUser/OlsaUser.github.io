@@ -64,22 +64,18 @@
                 last_name: "Any",
                 full_name: "Customer Any"
             });
-
-            webClient.show();
-            webClient.sendPostBackSilent("start");
-         });
-         
-        ConverseWebClient.init(options2, function(webClient2) {
-            webClient2.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
+            
+            webClient.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
                 id: "TT00001",
                 first_name: "Friend",
                 last_name: "Any",
                 full_name: "Customer Any"
             });
 
-            webClient2.show();
-            webClient2.sendPostBackSilent("go");
-         });  
+            webClient.show();
+            webClient.sendPostBackSilent("start");
+         });
+          
     });
 </script>
 
