@@ -33,11 +33,7 @@
 
 </head>
 
-
-
-<body>
- <b>Chat #1</b> 
- <script type="text/javascript">
+<script type="text/javascript">
     $(function() {
         var options = {
             placeholder: "Type a message...",
@@ -49,20 +45,27 @@
             title : "Chat With Help Bot",
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
+           newChat = new converseChat(options);
+             newChat.init(function() {
+                 newChat.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
+                     id : "TT00001",
+                     first_name : "Friend",
+                     last_name : "Any",
+                     full_name : "Customer Any",
+                     locale : "en_US"
+                  });
+              });
 
-        ConverseWebClient.init(options, function (webClient1) {
-            webClient1.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
-                id: "TT00001",
-                first_name: "Friend",
-                last_name: "Any",
-                full_name: "Customer Any"
-            });
-
-            webClient1.show();
-            webClient1.sendPostBackSilent("start");
-         })
+              newChat.show();
+              setTimeout(function() {
+                   newChat.sendPostBackSilent('start');
+              }, 1000);
+         });
     });
 </script>
+
+<body>
+ <b>Chat #1</b> 
 <div id="chatcontainer1" class="chat-container"></div>
 
  <b>Chat #2</b> 
@@ -79,7 +82,7 @@
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
 
-        ConverseWebClient.init(options, f(webClient2) {
+        ConverseWebClient.init(options, function(webClient2) {
             webClient2.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
                 id: "TT00001",
                 first_name: "Friend",
