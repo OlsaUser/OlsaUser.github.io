@@ -57,25 +57,28 @@
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
         
-        ConverseWebClient.init(options1, function(webClient) {
-            webClient.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
+        ConverseWebClient.init(options1, function(webClient1) {
+            webClient1.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
                 id: "TT00001",
                 first_name: "Friend",
                 last_name: "Any",
                 full_name: "Customer Any"
             });
-            
-            webClient.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
+            webClient1.show();
+            webClient1.sendPostBackSilent("start");
+         })
+         
+        ConverseWebClient.init(options2, function(webClient2) {
+            webClient2.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
                 id: "TT00001",
                 first_name: "Friend",
                 last_name: "Any",
                 full_name: "Customer Any"
             });
 
-            webClient.show();
-            webClient.sendPostBackSilent("start");
+            webClient2.show();
+            webClient2.sendPostBackSilent("start");
          });
-          
     });
 </script>
 
