@@ -34,53 +34,54 @@
 </head>
 
 <script type="text/javascript">
-    $(function() {   
+    $(function() {
         var options1 = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
             serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
-            container: "#chatcontainer1",
+            container: "#chatcontainer",
             showToolbar: true,
             reConnectDelay: 10000,
-            title : "Chat With Help Bot",
-            hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
+            tenant: "sa9299b",
+            botId: "eb407a81-c00e-4162-8223-8f67dbe86bef",
+            title : "Chat With Us",
+            hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
+            user: {
+                id: "TT00001",
+                first_name: "Friend",
+                last_name: "Any",
+                full_name: "Customer Any"
+            }
         };
+
+        var webClient = ConverseWebClient.init(options1);
+        webClient.sendPostBackSilent("start");
+        webClient.show();
         
-       var options2 = {
+        var options2 = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
             serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
-            container: "#chatcontainer2",
+            container: "#chatcontainer",
             showToolbar: true,
             reConnectDelay: 10000,
-            title : "Chat With Import Bot",
-            hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
+            tenant: "sa9299b",
+            botId: "6eae31e9-74dc-4219-8b95-84fd3e808b95",
+            title : "Chat With Us",
+            hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
+            user: {
+                id: "TT00001",
+                first_name: "Friend",
+                last_name: "Any",
+                full_name: "Customer Any"
+            }
         };
-        
-        var webClient1 = ConverseWebClient(options1);
-        webClient1.init(function() {
-            webClient1.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
-                id: "TT00001",
-                first_name: "Friend",
-                last_name: "Any",
-                full_name: "Customer Any"
-            });
-            });
-            webClient1.show();
-            webClient1.sendPostBackSilent("start");
-         
-        ConverseWebClient.init(options2, function(webClient2) {
-            webClient2.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
-                id: "TT00001",
-                first_name: "Friend",
-                last_name: "Any",
-                full_name: "Customer Any"
-            });
 
-            webClient2.show();
-            webClient2.sendPostBackSilent("go");
-         });
+        var webClient2 = ConverseWebClient.init(options2);
+        webClient2.sendPostBackSilent("start");
+        webClient2.show();
     });
+
 </script>
 
 <body>
