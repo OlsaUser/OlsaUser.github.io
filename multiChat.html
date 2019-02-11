@@ -29,7 +29,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
     <script src="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3.1/converse-chat.js"></script>
+
 </head>
+
 <script type="text/javascript">
     $(function() {
         var options = {
@@ -55,7 +57,9 @@
         webClient.sendPostBackSilent("start");
         webClient.show();
 });
+</script>
 
+<script type="text/javascript">
    $(function() {
         var options2 = {
             placeholder: "Type a message...",
@@ -70,21 +74,26 @@
             hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
             user: {
                 id: "TT00001",
-                first_name: "Friend",
-                last_name: "Any",
-                full_name: "Customer Any"
+                first_name: "Friend"2,
+                last_name: "Any2",
+                full_name: "Customer Any2"
             }
         };
 
         var webClient2 = ConverseWebClient.init(options2);
-        webClient2.sendPostBackSilent("start");
+        webClient2.sendPostBackSilent("go");
         webClient2.show();
     });
 </script>
 
 <body>
+
+<b>Chat #1</b>
 <div id="chatcontainer1" class="chat-container"></div>
+
+<b>Chat #2</b>
 <div id="chatcontainer2" class="chat-container"></div>
+
 </body>
 
 </html>
