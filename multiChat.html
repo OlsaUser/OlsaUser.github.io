@@ -54,11 +54,9 @@
         var webClient = ConverseWebClient.init(options);
         webClient.sendPostBackSilent("start");
         webClient.show();
-    });
-</script>
-<script type="text/javascript">
-    $(function() {
-        var options = {
+
+
+        var options2 = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
             serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
@@ -77,9 +75,9 @@
             }
         };
 
-        var webClient = ConverseWebClient.init(options);
-        webClient.sendPostBackSilent("start");
-        webClient.show();
+        var webClient2 = ConverseWebClient.init(options2);
+        webClient2.sendPostBackSilent("start");
+        webClient2.show();
     });
 </script>
 
