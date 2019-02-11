@@ -34,11 +34,7 @@
 </head>
 
 <script type="text/javascript">
-    
-    
-    $(function() {
-    var newChat;
-    
+    $(function() {   
         var options = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
@@ -49,22 +45,19 @@
             title : "Chat With Help Bot",
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
-           newChat = new ConverseWebClient(options);
-             newChat.init(function() {
-                 newChat.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
-                     id : "TT00001",
-                     first_name : "Friend",
-                     last_name : "Any",
-                     full_name : "Customer Any",
-                     locale : "en_US"
-                  });
-              });
+        
+        ConverseWebClient.init(options, function(webClient) {
+            webClient.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
+                id: "TT00001",
+                first_name: "Friend",
+                last_name: "Any",
+                full_name: "Customer Any"
+            });
 
-              newChat.show();
-              setTimeout(function() {
-                   newChat.sendPostBackSilent('start');
-              }, 1000);
+            webClient2.show();
+            webClient2.sendPostBackSilent("start");
          });
+    });
 </script>
 
 <body>
@@ -86,7 +79,7 @@
         };
 
         ConverseWebClient.init(options, function(webClient2) {
-            webClient2.openBot("sa9299b", "eb407a81-c00e-4162-8223-8f67dbe86bef", {
+            webClient2.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
                 id: "TT00001",
                 first_name: "Friend",
                 last_name: "Any",
@@ -94,12 +87,12 @@
             });
 
             webClient2.show();
-            webClient2.sendPostBackSilent("start");
-         })
+            webClient2.sendPostBackSilent("go");
+         });
     });
 </script>
+<div id="chatcontainer1" class="chat-container"></div>
 <div id="chatcontainer2" class="chat-container"></div>
-
 </body>
 
 </html>
