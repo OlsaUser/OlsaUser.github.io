@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
+    <style type="text/css">
     html {
         height: 98%;
-        font-family: "Arial", Helvetica, sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 14px;
      }
      body {
@@ -14,28 +14,25 @@
         background-color: #ffffff;
         border: 1px solid #e5e5ea;
         display: block;
-        height: 65%;
+        height: 85%;
         width: 85%;
         border-radius: 6px;
         box-shadow: 0 0 20px #acacac;
     }
-
-</style>
+    </style>
 
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3/converse-chat.css">
+    <link rel="stylesheet" href="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3.1/converse-chat.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
-    <script src="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3/converse-chat.js"></script>
-
+    <script src="https://designer-converse-qa-iad.ces.pitneycloud.com/webchat/v3.1/converse-chat.js"></script>
 </head>
-
 <script type="text/javascript">
     $(function() {
-        var options1 = {
+        var options = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
             serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
@@ -54,11 +51,14 @@
             }
         };
 
-        var webClient = ConverseWebClient.init(options1);
+        var webClient = ConverseWebClient.init(options);
         webClient.sendPostBackSilent("start");
         webClient.show();
-        
-        var options2 = {
+    });
+</script>
+<script type="text/javascript">
+    $(function() {
+        var options = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
             serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
@@ -77,21 +77,15 @@
             }
         };
 
-        var webClient2 = ConverseWebClient.init(options2);
-        webClient2.sendPostBackSilent("start");
-        webClient2.show();
+        var webClient = ConverseWebClient.init(options);
+        webClient.sendPostBackSilent("start");
+        webClient.show();
     });
-
 </script>
 
 <body>
-
-<b>Chat #1</b> 
 <div id="chatcontainer1" class="chat-container"></div>
-
-<b>Chat #2</b> 
 <div id="chatcontainer2" class="chat-container"></div>
-
 </body>
 
 </html>
