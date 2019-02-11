@@ -73,7 +73,7 @@
 
 <script type="text/javascript">
     $(function() {
-        var options = {
+        var options2 = {
             placeholder: "Type a message...",
             host: "https://converse-qa-iad.ces.pitneycloud.com",
             serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
@@ -84,16 +84,16 @@
             hideIcon: "fa-times" // See: https://fontawesome.com/icons?d=gallery&m=free
         };
 
-        ConverseWebClient.init(options, function (webClient) {
-            webClient.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
+        ConverseWebClient.init(options2, function (webClient2) {
+            webClient2.openBot("sa9299b", "6eae31e9-74dc-4219-8b95-84fd3e808b95", {
                 id: "xxxxxxx",
                 first_name: "v3/converse-chat",
                 last_name: "v3/converse-chat",
                 full_name: "v3/converse-chat"
             });
 
-            webClient.show();
-            webClient.sendPostBackSilent("go");
+            webClient2.show();
+            webClient2.sendPostBackSilent("go");
         });
     });
 </script>
