@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>V3.1</title>
     <style type="text/css">
     html {
         height: 98%;
@@ -19,6 +20,13 @@
         border-radius: 6px;
         box-shadow: 0 0 20px #acacac;
     }
+     .pb-chat-popup-messages-footer > .pb-chat-popup-messages-message-box > textarea {
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+     }
+     .pb-btn:hover {
+        background-color: #009bdf;
+     }
     </style>
 
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
@@ -42,6 +50,9 @@
             tenant: "sa9299b",
             botId: "31ee2f3a-d8ad-4b23-b2b8-fdbd7cf43746",
             title : "Chat With Us",
+            showToolbar: true,
+            showSettingsButton: true,
+            showCloseButton: true,
             hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
             user: {
                 id: "TT00001",

@@ -27,6 +27,9 @@
             font-family: "Open Sans", sans-serif;
             font-size: 12px;
         }
+        .pb-btn:hover {
+        background-color: #009bdf;
+        }
 
     </style>
 	
@@ -50,7 +53,6 @@
 </body>
 
 <script type="text/javascript">
-var webClient;
 $(function(){
 	var options = {
 		host: "https://converse-qa-iad.ces.pitneycloud.com",
@@ -65,6 +67,7 @@ $(function(){
 		placeholder: "Type a message...", 
 		sendButtonTitle: "Send",
 		showToolbar: true,
+        showSettingsButton: true,
 		hideIcon: "fa-times"
 		//hideIcon: "glyphicon-remove"
 	};
@@ -80,7 +83,7 @@ $(function(){
     
     webClient.show();
     webClient.sendPostBackSilent('start');
-})
+});
 });
 </script>
 
