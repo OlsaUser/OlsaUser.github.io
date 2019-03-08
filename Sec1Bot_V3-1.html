@@ -52,10 +52,8 @@
         };
 
 options: {
-
-windowOpen: function()
-
-{   alert("This got called when you tried to open a window from your bot") }
+windowOpen = function() {   
+alert("This got called when you tried to open a window from your bot") }
 };
 
         var webClient = ConverseWebClient.init(options);
