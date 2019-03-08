@@ -48,13 +48,11 @@
                 first_name: "Friend",
                 last_name: "Any",
                 full_name: "Customer Any"
-            }
-        };
-
-options: {
-windowOpen = function() {   
+            },
+            windowOpen = function() {   
 alert("This got called when you tried to open a window from your bot") }
 };
+        };
 
         var webClient = ConverseWebClient.init(options);
         webClient.sendPostBackSilent("start");
