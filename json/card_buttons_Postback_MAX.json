@@ -6,8 +6,8 @@
         "subtitle": "subtitle",
         "buttons": [
             {
-                "type": "postback button long text postback button long text postback button long text",
-                "title": "postback title",
+                "type": "postback",
+                "title": "postback title postback button long text postback button long text postback button long text",
                 "payload": "payload"
             }
         ]
