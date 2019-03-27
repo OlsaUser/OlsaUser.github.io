@@ -7,7 +7,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title postback button long text postback button long text postback button long text",
+                "title": "postback title 1",
                 "payload": "payload"
             }
         ]
@@ -20,7 +20,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 2",
                 "payload": "payload"
             }
         ]
@@ -33,7 +33,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 3",
                 "payload": "payload"
             }
         ]
@@ -46,7 +46,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 4",
                 "payload": "payload"
             }
         ]
@@ -59,7 +59,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 5",
                 "payload": "payload"
             }
         ]
@@ -72,7 +72,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 6",
                 "payload": "payload"
             }
         ]
@@ -85,7 +85,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 7",
                 "payload": "payload"
             }
         ]
@@ -98,7 +98,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 8",
                 "payload": "payload"
             }
         ]
@@ -111,7 +111,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 9",
                 "payload": "payload"
             }
         ]
@@ -124,7 +124,7 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title",
+                "title": "postback title 10",
                 "payload": "payload"
             }
         ]
