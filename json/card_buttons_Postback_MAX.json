@@ -7,7 +7,11 @@
         "buttons": [
             {
                 "type": "postback",
-                "title": "postback title 1",
+                "title": "postback title 1.0",
+                "payload": "payload"
+            },            {
+                "type": "postback",
+                "title": "postback title 1.1",
                 "payload": "payload"
             }
         ]
