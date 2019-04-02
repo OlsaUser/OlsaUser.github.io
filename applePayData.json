@@ -9,7 +9,10 @@
       "amount": 1000
     }
   ],
-  "total": 2000,
+  "total": {
+    "amount": 2000,
+    "label": "Total cost"
+  },
   "countryCode": "US",
   "currencyCode": "USD",
   "shippingMethods": [
