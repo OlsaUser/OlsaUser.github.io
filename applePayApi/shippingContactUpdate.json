@@ -17,12 +17,6 @@
   "currencyCode": "USD",
   "shippingMethods": [
     {
-      "label": "Free shipping",
-      "detail": "Send with SendPro",
-      "amount": 0,
-      "identifier": "FREE"
-    },
-    {
       "label": "Fast shipping",
       "detail": "Send with Road Runner",
       "amount": 10000,
