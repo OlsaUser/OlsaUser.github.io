@@ -14,7 +14,7 @@
 			"title": "This is title 2 and is a really really realllllllllllllllllly long title.",
 			"item_url": "http://zipzapme.com/special-offers",
 			"image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
-			"subtitle": "Would you like to hear more?",
+			"subtitle": "Please visit out site",
 			"buttons": [{
 				"type": "web_url",
 				"title": "Yes, Learn More",
@@ -22,14 +22,14 @@
 			}]
 		},
 		{
-			"title": "title 4 no sub title",
+			"title": "Ready?",
 			"item_url": "http://zipzapme.com/special-offers",
 			"image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
 			"subtitle": "",
 			"buttons": [{
-				"type": "web_url",
-				"title": "Yes, Learn More",
-				"url": "http://zipzapme.com/special-offers"
+                                   "type": "postback",
+                                  "title": "YES!",
+                                  "payload": "yes"
 			}]
 		},
 		{
@@ -38,15 +38,20 @@
 			"image_url": "",
 			"subtitle": "Would you like to hear more?",
 			"buttons": [{
-				"type": "web_url",
-				"title": "Yes, Learn More",
-				"url": "http://zipzapme.com/special-offers"
+	                           "type": "postback",
+                                  "title": "yes",
+                                  "payload": "yes"
+			},
+				   {
+	                          "type": "postback",
+                                  "title": "no",
+                                  "payload": "no"
 			}]
 		},
 		{
 			"title": "Title 6 no item url",
 			"item_url": "",
-			"image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
+			"image_url": "https://pbs.twimg.com/profile_images/650868875744034816/XiswpepL_400x400.png",
 			"subtitle": "Would you like to hear more?",
 			"buttons": [{
 				"type": "web_url",
@@ -57,7 +62,7 @@
 		{
 			"title": "Title 6 blah",
 			"item_url": "http://zipzapme.com/special-offers",
-			"image_url": "http://zipzapme.com/wp-content/uploads/2016/11/demo-promo-iphone-700x300.jpg",
+			"image_url": "https://beautifulpixels.com/wp-content/uploads/2017/01/zipzap-masthead.png",
 			"subtitle": "Would you like to hear more?",
 			"buttons": [{
 				"type": "web_url",
