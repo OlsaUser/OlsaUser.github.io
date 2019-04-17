@@ -28,7 +28,7 @@
     {
       "label": "Fast shipping",
       "detail": "Tomorrow before 1pm",
-      "amount": 7.00,
+      "amount": 7000,
       "identifier": "FAST"
     }
   ],
