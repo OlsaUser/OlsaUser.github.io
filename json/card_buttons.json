@@ -22,19 +22,6 @@
             "Remind Me Later",
             "No Thanks"
         ]
-    },
-      {
-        "title": "2. You are eligible for an upgrade to the iPhone 7.",
-        "item_url": "https://zakupywm1.pl/uploads/shops/banner_224.jpg",
-        "image_url": "https://zakupywm1.pl/uploads/shops/banner_224.jpg",
-        "subtitle": "subtitle",
-        "buttons": [
-            {
-                "type": "postback",
-                "title": "postback title",
-                "payload": "payload"
-            }
-        ]
     }
      
 ]
