@@ -32,10 +32,13 @@
     <script src="https://webchat-converse-qa-iad.ces.pitneycloud.com/js/converse-chat.js"></script>
 </head>
 <script type="text/javascript">
+
+let searchParams = new URLSearchParams(window.location.search);
+
 	$(function() {
 		var options = {
 			placeholder: "Type a message...",
-			host: "https://converse-qa-iad.ces.pitneycloud.com",
+			host: window.location.origin,
 			serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
 			container: "#chatcontainer",
 			showToolbar: true,
@@ -45,7 +48,7 @@
 			title : "Chat With Us",
 			hideIcon: "fa-times",
 			user: {
-				id: "TT00001",
+				id: searchParams.get("user"),
 				first_name: "Friend",
 				last_name: "Any",
 				full_name: "Customer Any"
