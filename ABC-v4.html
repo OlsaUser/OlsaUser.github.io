@@ -31,30 +31,32 @@
     <script src="https://webchat-converse-qa-iad.ces.pitneycloud.com/js/converse-chat.js"></script>
 </head>
 <script type="text/javascript">
-    $(function() {
-        var options = {
-            placeholder: "Type a message...",
-            host: "https://webchat-converse-qa-iad.ces.pitneycloud.com",
+ $(function() {
+		var options = {
+			placeholder: "Type a message...",
+			host:  "https://webchat-converse-qa-iad.ces.pitneycloud.com",
             converseHost: "https://converse-qa-iad.ces.pitneycloud.com",
-            serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
-            container: "#chatcontainer",
-            showToolbar: true,
-            reConnectDelay: 10000,
-            tenant: "sa9299b",
-            botId: "93a0e3c2-53fd-44da-a6f0-54e8c9c7d4a5",
-            title : "Chat With Us",
-            hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
-            user: {
-                id: "TT00001",
-                first_name: "Friend",
-                last_name: "Any",
-                full_name: "ABC"
-            }
-        };
+            serverUserImage: "https://medias3.prestastore.com/835054-pbig/chat-bot-for-social-networking.jpg",
+            clientUserImage: "http://icons.iconarchive.com/icons/hopstarter/soft-scraps/256/User-Chat-icon.png",
+			container: "#chatcontainer",
+			showToolbar: true,
+			reConnectDelay: 10000,
+			tenant: "sa9299b",
+			botId: "93a0e3c2-53fd-44da-a6f0-54e8c9c7d4a5",
+			title : "Welcome 😀",
+			hideIcon: "fa-times",
+			startPhrase: "time picker",
+			user: {
+				id: "TT00001",
+				first_name: "Olha",
+				last_name: "Samotokina",
+				full_name: "Olha S."
+			}
+		};
 
-        var webClient = ConverseWebClient.init(options);
-        webClient.show();
-    });
+		var webClient = ConverseWebClient.init(options);
+		webClient.show();
+	});
 </script>
 
 <body>
