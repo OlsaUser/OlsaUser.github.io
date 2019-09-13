@@ -31,34 +31,31 @@
     <script src="https://webchat-converse-qa-iad.ces.pitneycloud.com/js/converse-chat.js"></script>
 </head>
 <script type="text/javascript">
- $(function() {
-		var options = {
-			placeholder: "Type a message...",
-			host:  "https://webchat-converse-qa-iad.ces.pitneycloud.com",
+    $(function() {
+        var options = {
+            placeholder: "Type a message...",
+            host:  "https://webchat-converse-qa-iad.ces.pitneycloud.com",
             converseHost: "https://converse-qa-iad.ces.pitneycloud.com",
-            serverUserImage: "https://medias3.prestastore.com/835054-pbig/chat-bot-for-social-networking.jpg",
-            clientUserImage: "http://icons.iconarchive.com/icons/hopstarter/soft-scraps/256/User-Chat-icon.png",
-			container: "#chatcontainer",
-			showToolbar: true,
-			reConnectDelay: 10000,
-			tenant: "sa9299b",
-			botId: "494519b1-96e3-476b-a1b9-cf007b7aef5d",
-			title : "Welcome 😀",
-			hideIcon: "fa-times",
-			startPhrase: "start",
-			allowHTML: true,
-			disabledPlaceholder: "Please choose one of the above answers",
-			user: {
-				id: "TT00001",
-				first_name: "XXX",
-				last_name: "YYY",
-				full_name: "Olha S."
-			}
-		};
+            serverUserImage: "https://designer-converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
+            container: "#chatcontainer",
+            showToolbar: true,
+            reConnectDelay: 10000,
+            tenant: "sa9299b",
+            botId: "494519b1-96e3-476b-a1b9-cf007b7aef5d",
+            title : "Welcome :)",
+            startPhrase: "start",
+            hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
+            user: {
+                id: "TT00001",
+                first_name: "XXX",
+                last_name: "YYY",
+                full_name: "X. Y."
+            }
+        };
 
-		var webClient = ConverseWebClient.init(options);
-		webClient.show();
-	});
+        var webClient = ConverseWebClient.init(options);
+        webClient.show();
+    });
 </script>
 
 <body>
