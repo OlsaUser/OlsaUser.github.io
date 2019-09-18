@@ -22,44 +22,41 @@
     </style>
 
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://webchat-converse-qa-iad.ces.pitneycloud.com/css/converse-chat.css">
+    <link rel="stylesheet" href="https://webchat-designer.converse.pitneybowes.com/css/converse-chat.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
-    <script src="https://webchat-converse-qa-iad.ces.pitneycloud.com/js/converse-chat.js"></script>
+    <script src="https://webchat-designer.converse.pitneybowes.com/js/converse-chat.js"></script>
+    <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.min.js"></script>
 </head>
 <script type="text/javascript">
- $(function() {
-		var options = {
-			placeholder: "Type a message...",
-			host:  "https://webchat-converse-qa-iad.ces.pitneycloud.com",
-            converseHost: "https://converse-qa-iad.ces.pitneycloud.com",
-            serverUserImage: "https://medias3.prestastore.com/835054-pbig/chat-bot-for-social-networking.jpg",
-            clientUserImage: "http://icons.iconarchive.com/icons/hopstarter/soft-scraps/256/User-Chat-icon.png",
-			container: "#chatcontainer",
-			showToolbar: true,
-			reConnectDelay: 10000,
-			tenant: "sa9299b",
-			botId: "93a0e3c2-53fd-44da-a6f0-54e8c9c7d4a5",
-			title : "Welcome 😀",
-			hideIcon: "fa-times",
-			allowHTML: true,
-			startPhrase: "Hi",
-			disconnectedText: "Disconnected - trying to reconnect",
-			disabledPlaceholder: "Please choose one of the above answers",
-			user: {
-				id: "TT00001",
-				first_name: "A",
-				last_name: "B",
-				full_name: "ABC"
-			}
-		};
+    $(function() {
+        var options = {
+            placeholder: "Type a message...",
+            host:  "https://webchat-designer.converse.pitneybowes.com",
+            converseHost: "https://designer.converse.pitneybowes.com",
+            serverUserImage: "https://designerui.converse.pitneybowes.com/public/img/pb-circle-mark.png",
+            container: "#chatcontainer",
+            showToolbar: true,
+            reConnectDelay: 10000,
+            tenant: "sa3d20f",
+            botId: "a92ea1d0-55e8-11e9-9fa6-9909985625e9",
+            title : "Chat With Us",
+            startPhrase: "start",
+            hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
+            user: {
+                id: "TT00001",
+                first_name: "Apple",
+                last_name: "Chat",
+                full_name: "Customer Any"
+            }
+        };
 
-		var webClient = ConverseWebClient.init(options);
-		webClient.show();
-	});
+        var webClient = ConverseWebClient.init(options);
+        webClient.show();
+    });
 </script>
 
 <body>
