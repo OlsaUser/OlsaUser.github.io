@@ -1,61 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
-"http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>Chat Bot</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+    <meta name="description" content="This is a demo client">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://designer.converse.pitneybowes.com/public/slick/slick.css"/>
+    <link rel="stylesheet" href="https://designer.converse.pitneybowes.com/converseChatV2.css">
+    <link rel="shortcut icon" href="images/pb_favicon.ico" type="image/x-icon" />
+    <script src="https://designer.converse.pitneybowes.com/converseChatV2.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script type="text/javascript" src="https://designer.converse.pitneybowes.com/public/slick/slick.min.js"></script>
+    <style>
+       .chat-container {
+            background-color: #ffffff;
+            border: 1px solid #b0b0b0;
+            height: 500px;
+            width: 360px;
+        }
+    </style>
+  </head>
 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <link rel="stylesheet" type="text/css" href="https://designer.converse.pitneybowes.com/public/slick/slick.css"/>
- <link rel="stylesheet" href="https://designer.converse.pitneybowes.com/converseChatV2.css">
- <link rel="shortcut icon" href="images/pb_favicon.ico" type="image/x-icon" />
- <script src="https://designer.converse.pitneybowes.com/converseChatV2.js" ></script>
- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
- <script type="text/javascript" src="https://designer.converse.pitneybowes.com/public/slick/slick.min.js"></script>
-    
-<meta name="viewport" content="user-scalable=no, width=device-width">
-<style>
-.chat-container {
-max-width: 500px;
-height: 400px;
-border: 1px solid black;
-}
- </style>
- 
-</head>
 
 <body>
+    <div id="chatcontainer" class="chat-container"></div>
+    <script type="text/javascript">
+        var newChat;
 
-<script type="text/javascript">
-var newChat;
-$(function(){
-	// Add your Web Client options below. See TOPIC: 'Web Client Options' above for more information.
-	var options = {
-		host: "https://designer.converse.pitneybowes.com",
-		serverUserImage: "https://preview.converse.pitneybowes.com/pb-circle-mark.png",
-		container: "#chatcontainer",
-		showCloseButton: true,
-		//sendCallback: sTrap,
-		//receiveCallback: rTrap,
-		//hideCallback: hTrap,
-		title: "Online Chat",
-		placeholder: "Type a message...", 
-		sendButtonTitle: "Send",
-		hideIcon: "glyphicon-remove"
-	};
-	newChat = new converseChat(options);
-    newChat.init();
-    newChat.openBot("sa3d20f","ac0ffb75-4350-44e7-af70-7851ea77c0bb", {id: "xxxxxxx", first_name: "Customer", last_name: "Any", full_name: "Customer Any", locale: "en_US"});
-    newChat.show();
-    newChat.sendPostBackSilent('start');
-})
-</script>
+        $(function() {
+            var options = {
+                host: "https://designer.converse.pitneybowes.com",
+                title : "Chat With Us",
+                placeholder : "Type a message...",
+                sendButtonTitle : "Send",
+                serverUserImage: "https://converse-qa-iad.ces.pitneycloud.com/public/img/pb-circle-mark.png",
+                container : "#chatcontainer",
+                showCloseButton : true,
+                showSettingsButton: true,
+                hideIcon : "glyphicon-remove"
+            }
 
-<div id="chatcontainer" class="chat-container"></div>
+            newChat = new converseChat(options);
+            newChat.init(function() {
+                newChat.openBot("sa3d20f", "c283803a-4e91-4e9a-aa9c-ae8023588fff", {
+                    id : "TT00001",
+                    first_name : "Friend",
+                    last_name : "Any",
+                    full_name : "Customer Any",
+                    locale : "en_US"
+                });
+            });
 
+            newChat.show();
+            setTimeout(function() {
+                newChat.sendPostBackSilent('start');
+            }, 1000);
+        });
+    </script>
 </body>
-
 </html>
