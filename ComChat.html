@@ -1,19 +1,28 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>EngageOne® Converse Web Chat Client Example</title>
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-</head>
-<body>
-<div id="chatcontainer" class="chat-container"></div>
-<script src="https://webclient.dev.engageonechat.com/loader.min.js"></script>
-<script>converseChatLoader({
-    host: "wss://chatws.dev.us-east-1.engageonechat.com",
-    converseHost: "https://chatrunner.dev.us-east-1.engageonechat.com",
-    serverUserImage: "https://webclient.dev.engageonechat.com/eo-square-mark.png",
-    tenant: "safe451",
-    botId: "24473126-61ef-11ea-8315-9801a7a615d9",
-    placeholder: "Type a message...",
-    chatBotBaseUrl: "https://webclient.dev.engageonechat.com"
-});</script>
-</body>
+    <head>
+        <title>EngageOne&reg; Converse Web Chat Client Example</title>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    </head>
+    <body>
+        <div id="chatcontainer" class="chat-container"></div>
+        <script src="https://webclient.qa.engageonechat.com/loader.min.js"></script>
+        <script>converseChatLoader({
+            host: "wss://chatws.qa.us-east-1.engageonechat.com",
+            converseHost: "https://chatrunner.qa.us-east-1.engageonechat.com",
+            serverUserImage: "https://webclient.qa.engageonechat.com/eo-square-mark.png",
+            tenant: "sa35d4d",
+            botId: "Chat,0707",
+            placeholder: "Type a message...",
+			container: "#chatcontainer",
+            showToolbar: true,
+            reConnectDelay: 10000,
+            showToolbar: true,
+            showSettingsButton: true,
+            showCloseButton: true,
+            hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
+            allowHTML: true,
+            chatBotBaseUrl: "https://webclient.qa.engageonechat.com"
+        });</script>
+    </body>
 </html>
