@@ -24,7 +24,7 @@
 </head>
 
 <body>
-	<div id="eocv-player" data-project="61923d1b26d470135884466f" data-region="us-east-1" data-width="300" data-environment="dev2"></div>
+	<div id="eocv-player" data-project="61923d1b26d470135884466f" data-region="us-east-1" data-width="300" data-environment="dev2" data-ios-fullscreen="true"></div>
 	<script async defer src="https://embed.engageone.video/latest/playerPlugin.js"></script>
 </body>
 
